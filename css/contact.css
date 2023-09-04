@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://giffiles.alphacoders.com/209/209343.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+header {
+    background-color:transparent;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 50px;
+
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+.active {
+    color: #9fb5bd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #54647c;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto;
+}
+
+.contact-form h2 {
+    font-size: 35px;
+    color: #54647c;
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #54647c;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #54647c;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #54647c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+}
+
+.contact-form button:hover {
+    background-color: #444f5c;
+}

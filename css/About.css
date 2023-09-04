@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://giffiles.alphacoders.com/209/209343.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+
+header {
+    background-color:transparent;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 50px;
+
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #54647c;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.active {
+    color: #9fb5bd;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.logo {
+    float: left;
+    margin: -15px 10px ; 
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #90c0c0;
+;}
+
+.about{
+    margin-top: 0px;
+    text-align: center;}
+
+    .about>h2 {
+        color: #54647c ;
+        font-size: 35px;
+        margin: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .about>p{
+        color: #54647c ;
+        font-size: 20px;
+        margin: 40px;
+    }
+
+
+.about ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about li {
+    margin: 0 20px;
+    font-size: 18px;
+    color: #54647c;
+    border: 2px solid #54647c;
+    margin-bottom: 30px;
+    width: 100px;
+    
+}
+
+
+.cv-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    width: 100%;
+    max-width: 525px;
+    margin: 20px auto;
+    height: 150px; 
+}
+
+
+
+.cv-section h2 {
+    font-size: 35px;
+    color: #54647c;
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cv-section p {
+    font-size: 20px;
+    color: #54647c;
+    margin: 10px 0;
+}
+
+.cv-download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #54647c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+    margin-left:20px; ;
+}
+
+.cv-download-btn:hover {
+    background-color: #54647c;
+}
+
+.cv-download-btn>p {
+    color: #54647c;
+}
+
+
+
+.show-more-button {
+    background-color: #54647c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.show-more-button:hover {
+    background-color: #32404f;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    z-index: 9999;
+    width: 550px;
+}
+
+.popup p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.popup button {
+    padding: 8px 15px;
+    background-color: #54647c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #444f5c;
+}
+
+.popup>p{
+    color:#54647c ;
+    font-size: 20px;
+}
+
+.popup>h2{
+    color: #54647c;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.artist-btn {
+    background-color: #54647c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.artist-btn:hover {
+    background-color: #32404f;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    z-index: 9999;
+    width: 550px;
+}
+
+.popup p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.popup button {
+    padding: 8px 15px;
+    background-color: #54647c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #444f5c;
+}
+
+.popup > p {
+    color: #54647c;
+    font-size: 20px;
+}
+
+.popup > h2 {
+    color: #54647c;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.favorite-artist>h2{
+    color: #54647c;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.spotify{
+    margin-top: 20px;
+}
+
+.vaardig>h2{
+    color: #54647c ;
+    font-size: 35px;
+    margin-bottom: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+

@@ -36,11 +36,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    
 <header>
             <nav>
                 <li><a href="../Root/index.php">Home</a></li>
                 <li><a href="../pages/Project.php">Projecten</a></li>
                 <li><a href="../pages/About.php">Over mij</a></li>
+                <li><a href="../pages/Contact.php">Contact</a></li>
                 <?php
                     if($_SESSION['authenticated'] == true) {
                         echo '<li><a href="../pages/admin.php">Admin</a></li>';
@@ -49,8 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     }
                 ?>
 
-                <li><a href="../pages/Contact.php">Contact</a></li>
             </nav>
+                  
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         </header> 
 
     <h2>Login</h2>
@@ -66,5 +72,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <input type="submit" value="Login">
     </form>
+
+
+    <script src="../js/header.js"></script>
 </body>
 </html>

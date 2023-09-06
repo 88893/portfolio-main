@@ -11,11 +11,17 @@ require("../php/configproject.php");
     <link rel="stylesheet" href="../css/project.css">
 </head>
 <body>
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
     <header>
         <nav>
             <li><a href="../Root/index.php">Home</a></li>
             <li><a class="active" href="../pages/Project.php">Projecten</a></li>
             <li><a href="../pages/About.php">Over mij</a></li>
+            <li><a href="../pages/Contact.php">Contact</a></li>
             <?php
                 if($_SESSION['authenticated'] == true) {
                     echo '<li><a href="../pages/admin.php">Admin</a></li>';
@@ -23,8 +29,10 @@ require("../php/configproject.php");
                     echo '<li><a href="../pages/inlog.php">Login</a></li>';
                 }
             ?>
-            <li><a href="../pages/Contact.php">Contact</a></li>
         </nav>
+
+              
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </header>
 
     <main>
@@ -46,5 +54,7 @@ require("../php/configproject.php");
             </ul>
         </div>
     </main>
+
+    <script src="../js/header.js"></script>
 </body>
 </html>

@@ -5,22 +5,27 @@ body {
     background-image: url(https://giffiles.alphacoders.com/209/209343.gif);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
-    
 }
 
 header {
-    background-color:transparent;
+    background-color: transparent;
     color: #fff;
     padding: 10px 0;
+    background-color: transparent;
 }
+
 
 nav {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 50px;
+}
 
+.active {
+    color: #9fb5bd;
 }
 
 nav li {
@@ -39,6 +44,102 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.active {
-    color: #9fb5bd;
+form {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 40vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea,
+form select,
+form input[type="file"],
+form input[type="submit"] {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #54647c;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #9fb5bd;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 80px;
+}
+
+.delete{
+    height: 250px;
+    width: 85%;
+    margin-left: 50px;
+}
+
+h2{
+    color: #54647c;
+}
+
+.h2l>h2{
+
+    color: #f1b8cd;
+}
+
+.Logout{
+    background-color: #54647c;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 5%;
+    color: white;
+}
+
+
+/* Add this CSS to your stylesheet */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears on top of other content */
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 8s linear infinite; /* Animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

@@ -23,6 +23,7 @@ if (!isset($_SESSION['authenticated'])) {
                 <li><a class='active' href="../Root/index.php">Home</a></li>
                 <li><a href="../pages/Project.php">Projecten</a></li>
                 <li><a href="../pages/About.php">Over mij</a></li>
+                <li><a href="../pages/Contact.php">Contact</a></li>
                 <?php
                     if($_SESSION['authenticated'] == true) {
                         echo '<li><a href="../pages/admin.php">Admin</a></li>';
@@ -31,8 +32,10 @@ if (!isset($_SESSION['authenticated'])) {
                     }
                 ?>
 
-                <li><a href="../pages/Contact.php">Contact</a></li>
+                
             </nav>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         </header> 
 
     <main>
@@ -52,5 +55,7 @@ if (!isset($_SESSION['authenticated'])) {
             </p>
         </div>
     </main>
+
+    <script src="../js/header.js"></script>
 </body>
 </html>

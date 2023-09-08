@@ -5,9 +5,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'];
     $date = $_POST['date'];
     $description = $_POST['description'];
-    $image = ""; // Store image path here
+    $image = ""; 
 
-    // Handle file upload and store image path in $image
+   
 
     $sql = "INSERT INTO projects (title, date, description, image) VALUES ('$title', '$date', '$description', '$image')";
 

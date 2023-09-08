@@ -7,27 +7,27 @@ error_reporting(E_ALL);
 
 
 if (!isset($_SESSION["authenticated"]) || $_SESSION["authenticated"] !== true) {
-    header("Location: ../Root/index.php"); // Redirect naar de homepage als niet geauthenticeerd
+    header("Location: ../Root/index.php"); 
     exit;
 }
 
-// Check if the form for editing a project is submitted
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["edit_project"])) {
     $project_id = $_POST["project_id"];
     $title = $_POST["title"];
     $date = $_POST["date"];
     $description = $_POST["description"];
 
-    // Update the project details in the database
+  
     $query = "UPDATE projects SET title='$title', date='$date', description='$description' WHERE id='$project_id'";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
-        // Project details updated successfully
+       
         header("Location: ../pages/Project.php");
         exit;
     } else {
-        // Error occurred while updating project details
+       
         echo "Er is een fout opgetreden bij het bijwerken van het project.";
     }
 }
@@ -35,16 +35,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["edit_project"])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["delete_project"])) {
     $project_id = $_POST["project_id"];
 
-    // Delete the project from the database
+  
     $query = "DELETE FROM projects WHERE id='$project_id'";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
-        // Project deleted successfully
+       
         header("Location: ../pages/Project.php");
         exit;
     } else {
-        // Error occurred while deleting the project
+       
         echo "Er is een fout opgetreden bij het verwijderen van het project.";
     }
 }
@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["delete_project"])) {
         <label for="project_id">Selecteer het project:</label>
         <select id="project_id" name="project_id" required>
             <?php
-            // Fetch all projects from the database
+           
             $query = "SELECT * FROM projects";
             $result = mysqli_query($conn, $query);
 
@@ -146,7 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["delete_project"])) {
         <label for="delete_project">Selecteer het project om te verwijderen:</label>
         <select id="delete_project" name="project_id" required>
             <?php
-            // Fetch all projects from the database
+            
             $query = "SELECT * FROM projects";
             $result = mysqli_query($conn, $query);
 

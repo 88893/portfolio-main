@@ -1,10 +1,10 @@
 <?php
-// Include the database configuration
+
 require_once 'configcontact.php';
 
-// Check if the form is submitted
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Retrieve form data
+   
     $naam = $_POST['naam'];
     $email = $_POST['email'];
     $nummer = $_POST['nummer'];

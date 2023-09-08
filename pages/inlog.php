@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-// Check if the user is already authenticated
+
 if (isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true) {
-    header("Location: admin.php"); // Redirect to admin page if already logged in
+    header("Location: admin.php"); 
    
 }
 
-// Your admin login credentials (change these to your own)
+
 $adminUsername = "JoshuaAdmin";
 $adminPassword = "Killyourself";
 
@@ -16,13 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     if ($username === $adminUsername && $password === $adminPassword) {
-        // Authentication successful
+        
         $_SESSION["authenticated"] = true;
-        header("Location: admin.php"); // Redirect to admin page
+        header("Location: admin.php"); 
        
     } else {
-        // Authentication failed
-        $errorMessage = "Invalid username or password.";
+       
+        $errorMessage = "<p style='color:red;'>Invalid username or password.</p>";
     }
 }
 ?>

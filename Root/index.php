@@ -18,6 +18,7 @@ if (!isset($_SESSION['authenticated'])) {
     <title>Document</title>
 </head>
 <body>
+
     <header>
             <nav>
                 <li><a class='active' href="../Root/index.php">Home</a></li>
@@ -40,22 +41,35 @@ if (!isset($_SESSION['authenticated'])) {
 
     <main>
         <div class="pfp">
-           
-            <img src="https://media.discordapp.net/attachments/1076950186699526214/1147089021005209621/Screenshot_2023-08-29_at_02.17.54.png?width=1468&height=1396" alt="" >
             <h1>Welkom op me pagina</h1>
-            <p> Hoi Ik ben Joshua Mohanlal en dit is mijn  portfolio Website.
+            <img src="https://media.discordapp.net/attachments/1076950186699526214/1147089021005209621/Screenshot_2023-08-29_at_02.17.54.png?width=1468&height=1396" alt="" >
+           
+            
+            <div class="text-container">
+                
+            <p> Hallo, ik ben Joshua Mohanlal en ik heet je van harte welkom op mijn portfolio website.
                 <br>
                 <br>
-                Hier laat ik zien wat voor <a href="../html/Project.html">projecten</a> ik heb gemaakt in dit jaar.
+                Op deze plek deel ik trots mijn <a href="../pages/Project.php">projecten</a> van het afgelopen jaar. 
                 <br>
+                Ik neem je graag mee op een reis door mijn creatieve werk en laat zien wat ik heb bereikt.
+                <br><br>
+               
+                Daarnaast vertel ik je graag meer <a href="../pages/About.php">over mezelf</a>. 
                 <br>
-                Ik vertel ook nog wat <a href="../html/About.html">over mezelf </a>en wat me skills zijn.
+                Wie ben ik? Wat zijn mijn passies en interesses? Welke vaardigheden bezit ik? 
+                <br><br>
+                Leer me beter kennen terwijl we samen door mijn portfolio bladeren.
                 
                 
             </p>
+            </div>
         </div>
     </main>
+    
 
+  
     <script src="../js/header.js"></script>
+
 </body>
 </html>

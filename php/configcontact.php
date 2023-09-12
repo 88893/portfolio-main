@@ -3,10 +3,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 
-$host = "localhost";
-$username = "root"; 
-$password = ""; 
-$database = "Contact"; 
+$host = "localhost:3306";
+$username = "portfolio88893"; 
+$password = "B8z7q$57e"; 
+$database = "portfolio88893"; 
 
 session_start();
 

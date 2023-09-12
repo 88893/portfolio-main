@@ -3,10 +3,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 
-$host = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$database = "Projects"; 
+$host = "localhost:3306"; 
+$username = "88893student"; 
+$password = "I?c8u36q6"; 
+$database = "portfolio88893"; 
 
 session_start();
 
@@ -19,6 +19,7 @@ if (!$conn) {
     echo "Errno:" . mysqli_connect_errno() . "<br>/"; 
     exit;
 }
+
 
 
 ?>
